@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+nav {
+  width: auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  color: #7C6A0A;
+  padding: 15px;
+}
+nav p {
+  font-size: 1.5em;
+  padding-left: 35px;
+}
+nav .icons {
+  display: flex;
+  gap: 15px;
+}
+nav .icons button {
+  background: none;
+  border-style: none;
+  cursor: pointer;
+}
+nav .icons button svg {
+  width: 28px;
+  height: 28x;
+}
+nav .icons button svg path {
+  stroke: #7C6A0A;
+}
+
+main {
+  background-color: #FFEFE7;
+}
+
+footer {
+  background-color: #fa9500;
+  width: 100%;
+  height: 150px;
+}/*# sourceMappingURL=main.css.map */
