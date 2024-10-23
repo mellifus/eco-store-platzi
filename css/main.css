@@ -1,4 +1,4 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,14 +7,15 @@ body {
 
 nav {
   width: auto;
-  height: 80px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   color: #7C6A0A;
   padding: 15px;
 }
 nav p {
-  font-size: 1.5em;
+  font-size: 1.3em;
   padding-left: 35px;
 }
 nav .icons {
@@ -26,20 +27,208 @@ nav .icons button {
   border-style: none;
   cursor: pointer;
 }
-nav .icons button svg {
-  width: 28px;
-  height: 28x;
+
+article {
+  width: auto;
+  color: #7C6A0A;
+  padding-left: 45px;
+  padding-right: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-nav .icons button svg path {
-  stroke: #7C6A0A;
+article h1 {
+  font-size: 2em;
+}
+article p {
+  font-size: 1.3em;
+}
+article .impact-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 25px;
+}
+article img {
+  width: 25vw;
+  border-radius: 22px;
+  padding-top: 10px;
+}
+article button {
+  background: none;
+  border-style: none;
+  cursor: pointer;
+}
+article button {
+  width: 12vw;
+  padding: 20px;
+  background-color: #fa9500;
+  border-radius: 35px;
+  color: white;
+  font-size: 1em;
+}
+article button:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
 }
 
-main {
-  background-color: #FFEFE7;
+section {
+  width: auto;
+  height: auto;
+  padding: 60px;
+}
+section h2 {
+  color: #7C6A0A;
+  font-size: 1.7em;
+}
+section .healthcare, section .furniture {
+  padding-bottom: 60px;
+}
+section .healthcare h3, section .furniture h3, section .healthcare p, section .furniture p {
+  padding-bottom: 10px;
+}
+section .healthcare h2, section .furniture h2 {
+  font-weight: 300;
+  padding-bottom: 60px;
+}
+section .healthcare .card-section, section .furniture .card-section {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 200px;
+  row-gap: 80px;
+}
+section .healthcare .product-card, section .furniture .product-card {
+  width: 20vw;
+  height: 80vh;
+  background-color: #FFDAC6;
+  color: #7C6A0A;
+  padding: 25px;
+  border-radius: 10px;
+}
+section .healthcare .product-card .icon, section .furniture .product-card .icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 12px;
+}
+section .healthcare .product-card .icon svg, section .furniture .product-card .icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: #7C6A0A;
+}
+section .healthcare .product-card .product-image, section .furniture .product-card .product-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .healthcare .product-card img, section .furniture .product-card img {
+  width: 20vw;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+section .furniture .product-card {
+  background-color: #BABD8D;
+}
+
+.about-us {
+  padding-bottom: 60px;
+}
+.about-us h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+.about-us .mission-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-us .mission-section .earth, .about-us .mission-section .innovation {
+  width: 35vw;
+  display: flex;
+  gap: 40px;
+}
+.about-us .mission-section .earth img, .about-us .mission-section .innovation img {
+  object-fit: cover;
+}
+.about-us .mission-section .earth p, .about-us .mission-section .innovation p {
+  color: #fa9500;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.3em;
+}
+.gallery {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.gallery h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+.gallery .gallery-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery .gallery-images img {
+  width: 28vw;
+  height: 45vh;
+  object-fit: cover;
+  object-position: 5px 35%;
+  border-radius: 16px;
+}
+.gallery .gallery-images img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+
+.location {
+  color: #fa9500;
+}
+.location h2 {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.location .map {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+.location p, .location h3 {
+  font-size: 1.3em;
+  padding-bottom: 10px;
 }
 
 footer {
   background-color: #fa9500;
   width: 100%;
-  height: 150px;
+  height: auto;
+  color: #FFEFE7;
+  padding: 40px;
+}
+footer h3 {
+  padding-bottom: 20px;
+}
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 40px;
 }/*# sourceMappingURL=main.css.map */
